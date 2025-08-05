@@ -66,6 +66,7 @@ module makeBottom() {
       makePattern();
     
       // Add a symbol in the center
+      rotate([0, 0, 180])
       scale([.9,.9]) tetralogo();
     }
   }
