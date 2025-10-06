@@ -52,7 +52,7 @@ module makeTop() {
       makePattern();
 
       // Add a symbol in the center
-      scale([1,1]) tetraqr(1);
+      scale([1,1]) qr();
     }
   }
 }
@@ -67,16 +67,16 @@ module makeBottom() {
     
       // Add a symbol in the center
       rotate([0, 0, 180])
-      scale([.9,.9]) tetralogo();
+      scale([.9,.9]) logo();
     }
   }
 }
 
-/* Standard tetraqr logo stamp */
-module tetraqr() {
-  translate([-20,-18.5,0])linear_extrude(t_emboss) import("../image/qr.svg");
+/* Standard qr logo stamp */
+module qr() {
+  translate([-20,-18.5,0])linear_extrude(t_emboss) import("../image/example_qr.svg");
 }
 
-module tetralogo() {
-   translate([-18,-20,0])linear_extrude(t_emboss) import("../image/tetra_logo2.svg",convexity=30);
+module logo() {
+   translate([-18,-20,0])linear_extrude(t_emboss) import("../image/example_logo.svg",convexity=30);
 }
