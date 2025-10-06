@@ -15,7 +15,7 @@ You will need:
 The images folder contains example SVG files. You will need to replace these with your own files to produce your custom chip. 
 The scad folder contains the scad file which you will use to create the STL. 
 
-## Acknolwedgements
+## Acknowledgements
 I used some code from https://github.com/nerdhaus/poker-chip in this project.
 
 ---
